@@ -1,0 +1,59 @@
+==================== 🧮 Math Problems ====================
+
+Problem                                | Best Structure
+---------------------------------------|-----------------
+Check if a number is even or odd       | if/else
+Find the largest of three numbers      | if/elif/else
+Print the multiplication table         | for loop
+Calculate the factorial                | for loop / while loop
+Sum all numbers from 1 to n            | for loop
+Check if a number is prime             | for loop + break
+Count how many digits are in a number  | while loop
+Reverse the digits of a number         | while loop
+Divisible by both 3 and 5              | if
+Generate first 10 Fibonacci numbers    | for loop
+
+==================== 🔤 String Problems ==================
+
+Problem                                | Best Structure
+---------------------------------------|-----------------
+Reverse a string                       | for loop / slicing
+Check if string is a palindrome        | if + loop/slicing
+Count vowels in a string               | for loop
+Count words in a sentence              | for loop
+Remove all spaces                      | for loop
+Replace vowels with *                  | for loop + if
+Convert to uppercase (manual)          | for loop + if
+Find the longest word                  | for loop
+Check if only digits                   | for loop + if
+Compare two strings (ignore case)      | if + .lower()
+
+================= ✅ Boolean / Logic Problems =============
+
+Problem                                | Best Structure
+---------------------------------------|-----------------
+Positive, negative, or zero            | if/elif/else
+Check if year is leap year             | if/elif/else
+Eligible to vote (age ≥ 18)            | if
+Password valid (len ≥ 8)               | if
+Number between two numbers             | if
+Three angles form a triangle           | if
+Three sides form a triangle            | if
+Multiple of 10                         | if
+Weekday or weekend                     | if/elif/else
+Same parity (even/odd)                 | if
+
+================ 📦 Object / List Problems ================
+
+Problem                                | Best Structure
+---------------------------------------|-----------------
+Print all items in a list              | for loop
+Find maximum in a list                 | for loop
+Find minimum in a list                 | for loop
+Sum of a list                          | for loop
+Count occurrences in a list            | for loop
+Remove duplicates                      | for loop + new list
+Sort list without .sort()              | nested for loops
+Reverse a list                         | for loop / slicing
+Merge two lists                        | for loop
+Check if element exists in a list      | for loop + if
