@@ -8,7 +8,7 @@ Print the multiplication table         | for loop
 Calculate the factorial                | for loop / while loop
 Sum all numbers from 1 to n            | for loop
 Check if a number is prime             | for loop + break
-Count how many digits are in a number  | while loop
+Count how many digits are in a number  | while loop / regex
 Reverse the digits of a number         | while loop
 Divisible by both 3 and 5              | if
 Generate first 10 Fibonacci numbers    | for loop
@@ -18,14 +18,14 @@ Generate first 10 Fibonacci numbers    | for loop
 Problem                                | Best Structure
 ---------------------------------------|-----------------
 Reverse a string                       | for loop / slicing
-Check if string is a palindrome        | if + loop/slicing
-Count vowels in a string               | for loop
-Count words in a sentence              | for loop
-Remove all spaces                      | for loop
-Replace vowels with *                  | for loop + if
+Check if string is a palindrome        | if + loop/slicing / regex
+Count vowels in a string               | for loop / regex
+Count words in a sentence              | for loop / regex
+Remove all spaces                      | for loop / regex
+Replace vowels with *                  | for loop + if / regex
 Convert to uppercase (manual)          | for loop + if
-Find the longest word                  | for loop
-Check if only digits                   | for loop + if
+Find the longest word                  | for loop / regex
+Check if only digits                   | for loop + if / regex
 Compare two strings (ignore case)      | if + .lower()
 
 ================= ✅ Boolean / Logic Problems =============
@@ -35,7 +35,7 @@ Problem                                | Best Structure
 Positive, negative, or zero            | if/elif/else
 Check if year is leap year             | if/elif/else
 Eligible to vote (age ≥ 18)            | if
-Password valid (len ≥ 8)               | if
+Password valid (len ≥ 8)               | if / regex
 Number between two numbers             | if
 Three angles form a triangle           | if
 Three sides form a triangle            | if
@@ -51,9 +51,48 @@ Print all items in a list              | for loop
 Find maximum in a list                 | for loop
 Find minimum in a list                 | for loop
 Sum of a list                          | for loop
-Count occurrences in a list            | for loop
+Count occurrences in a list            | for loop / regex
 Remove duplicates                      | for loop + new list
 Sort list without .sort()              | nested for loops
 Reverse a list                         | for loop / slicing
 Merge two lists                        | for loop
-Check if element exists in a list      | for loop + if
+Check if element exists in a list      | for loop + if / regex
+
+
+
+
+
+
+Data Structures
+│
+├── Sequences
+│   ├── list        → [1, 2, 3] (mutable, ordered)
+│   ├── tuple       → (1, 2, 3) (immutable, ordered)
+│   ├── str         → "hello"   (immutable, text sequence)
+│   ├── range       → range(5)  (sequence generator)
+│   ├── array       → array('i', [1,2,3]) (typed, compact numbers)
+│   └── bytes / bytearray → b"abc" (immutable / mutable byte sequences)
+│
+├── Sets
+│   ├── set         → {1, 2, 3} (unique, unordered)
+│   └── frozenset   → frozenset([1,2,3]) (immutable set)
+│
+├── Mappings
+│   └── dict        → {"a": 1, "b": 2} (key → value hash map)
+│
+├── Collections (specialized)
+│   ├── deque       → deque([1,2,3]) (double-ended queue)
+│   ├── Counter     → Counter("hello") (counts items)
+│   ├── defaultdict → defaultdict(int) (auto default values)
+│   ├── OrderedDict → OrderedDict() (insertion order + extras)
+│   └── ChainMap    → ChainMap(d1, d2) (combine multiple dicts)
+│
+├── Queues & Heaps
+│   ├── queue.Queue     → FIFO queue (thread-safe)
+│   ├── queue.LifoQueue → Stack (LIFO)
+│   ├── queue.PriorityQueue → Priority-based
+│   └── heapq (list-based min-heap utilities)
+│
+└── Numeric / Data Science (external libs)
+    ├── NumPy ndarray     → np.array([1,2,3]) (multi-d arrays)
+    └── Pandas Series/DataFrame → Tabular data
