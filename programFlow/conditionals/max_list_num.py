@@ -1,12 +1,12 @@
-def my_num(numbers):
-    num = numbers[0]
-    for a in numbers:
-        if a %  num and a == 0:
-            num *= a
-    return num
+def max_num(numbers):
+    max = 0
+    for n in numbers:
+        if n > max:
+            max = a
+    return max
 
-user_input = input("Enter digits: ")
+usuer_input = input("enter numbers: ")
 
-numbers = [int(x) for x in user_input.split()]
+numbers = [int(x) for x in usuer_input.split()]
 
-print(f"min number is {my_num(numbers)}")
+print(f"these are the even numbers: {max_num(numbers)} ")

@@ -1,0 +1,119 @@
+====================================================
+CORE PYTHON DATA STRUCTURES
+====================================================
+
+
+
+
+| Real-world analogy                 | Python type | Example                        |
+| ---------------------------------- | ----------- | ------------------------------ |
+| Grocery list you can edit          | List        | `["eggs", "milk", "bread"]`    |
+| Grocery receipt (can’t be changed) | Tuple       | `("eggs", 2.99, "USD")`        |
+| Price lookup sheet                 | Dictionary  | `{"eggs": 2.99, "milk": 1.50}` |
+| Label on the bag                   | String      | `"DIEGO'S GROCERIES"`          |
+
+
+
+
+Term                              | Meaning                                               | Example
+----------------------------------|-------------------------------------------------------|----------------------------
+Condition                         | A statement that can be either True or False.         | x > 10
+If statement                      | Executes a block of code only if condition is True.   | if x > 10:
+Else statement                    | Executes a block when the if condition is False.      | else:
+Elif (Else if)                    | Checks another condition if previous one was False.   | elif x == 10:
+Nested if                         | An if statement inside another if.                    | if x > 0: if x < 10:
+Boolean expression                | Expression returning True or False.                   | age >= 18 and age < 65
+Logical operators                 | Combine conditions: and, or, not.                     | if x > 10 and y < 5:
+Comparison operators              | Compare values: ==, !=, >, <, >=, <=.                | if score == 100:
+Short-circuiting                  | and/or stops once result is known.                    | if a and b: (stops early if a is False)
+Conditional expression (ternary)  | One-line if shorthand.                                | result = "even" if n % 2 == 0 else "odd"
+Flag variable                     | Variable that tracks a condition’s state.             | found = False
+
+
+====================================================
+CONDITIONAL PROGRAMMING PROBLEMS (BY CATEGORY)
+====================================================
+
+-----------------------
+MATH & NUMBERS
+-----------------------
+Problem                            | Goal                                         | Hint
+-----------------------------------|----------------------------------------------|-------------------------------
+1. Even or Odd                     | Check if a number is even or odd             | n % 2 == 0
+2. Positive, Negative, or Zero     | Determine sign of a number                   | nested if
+3. Largest of Three                | Find max of 3 numbers                        | use chained if
+4. Leap Year Checker               | Determine if year is leap                    | divisible by 4 and (not 100 unless 400)
+5. Divisible by Both 3 and 5       | Check divisibility                           | n % 3 == 0 and n % 5 == 0
+
+
+-----------------------
+STRINGS
+-----------------------
+Problem                            | Goal                                         | Hint
+-----------------------------------|----------------------------------------------|-------------------------------
+6. Palindrome Check                | Check if string reads same backward          | s == s[::-1]
+7. Vowel or Consonant              | Identify type of character                   | if ch in 'aeiou'
+8. Password Strength               | Check password length and symbols            | combine len() and in
+9. Uppercase/Lowercase Check       | Detect if char is upper/lowercase            | .isupper() / .islower()
+10. Starts with Capital            | Check if first letter is uppercase           | s[0].isupper()
+
+
+-----------------------
+DECISION-MAKING SCENARIOS
+-----------------------
+Problem                            | Goal                                         | Hint
+-----------------------------------|----------------------------------------------|-------------------------------
+11. Voting Eligibility             | Check if user is old enough to vote          | age >= 18
+12. Grade Calculator               | Assign letter grade based on score           | use if-elif ladder
+13. Temperature Alert              | Print “Hot”, “Warm”, “Cold”                  | use range comparisons
+14. Simple Menu System             | Menu with numbered options (1–4)             | if choice == 1:
+15. Discount Logic                 | Apply discount based on price                | if price > 100: etc.
+
+
+-----------------------
+LOGIC AND OBJECTS
+-----------------------
+Problem                            | Goal                                         | Hint
+-----------------------------------|----------------------------------------------|-------------------------------
+16. Login System                   | Verify username and password                 | if user == 'admin' and pwd == '1234'
+17. Access Control                 | Deny access if not authenticated             | use not
+18. Number Guess Game              | Compare guess to secret number               | feedback: too high / too low
+19. Traffic Light                  | Determine action (Stop/Go/Wait)              | if light == 'red'
+20. Nested Decision                | Combine multiple attributes (student + age)  | nested if structure
+
+
+-----------------------
+ADVANCED LOGICAL THINKING
+-----------------------
+Problem                            | Concept                                      | Example
+-----------------------------------|----------------------------------------------|-------------------------------
+21. Short-circuit and/or           | Show how one false/true stops evaluation     | use print checks
+22. Ternary Simplification         | Replace long if/else with x if cond else y   | one-liners
+23. Multi-condition Ranges         | Use combined logical conditions              | if 0 <= x <= 10:
+24. Nested vs. Flattened Logic     | Compare nested and combined conditions       | readability test
+25. Boolean Flags                  | Track states dynamically                     | is_ready = True
+
+
+====================================================
+LEARNING RESOURCES
+====================================================
+
+Python Docs – Control Flow:
+https://docs.python.org/3/tutorial/controlflow.html
+
+W3Schools Conditionals:
+https://www.w3schools.com/python/python_conditions.asp
+
+Programiz Python Conditions:
+https://www.programiz.com/python-programming/if-elif-else
+
+RealPython Tutorial:
+https://realpython.com/python-conditional-statements/
+
+Practice Platforms:
+- HackerRank Python Basics
+- AlgoMonster Logic Section
+
+====================================================
+
+====================================================
