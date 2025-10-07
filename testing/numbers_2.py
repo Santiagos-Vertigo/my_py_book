@@ -1,7 +1,7 @@
-color_set = set()
+my_list = []
 
-color_set.add("Red")
-print(color_set)
+for x in range(1500, 2701):
+    if (x % 7 == 0) and (x % 5 == 0):
+        my_list.append(str(x))
 
-color_set.update(["Blue", "Green"])
-print(color_set)
+print(','.join(my_list))
