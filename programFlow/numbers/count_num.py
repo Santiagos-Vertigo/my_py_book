@@ -13,9 +13,9 @@ def find_mode(numbers):
             max_count = count
             mode = num
     return mode, max_count
-    
+
 
 numbers = [1, 2, 3, 3, 4]
-mode, times = find_mode(numbers)
-print(f"The number that appears the most is: {mode} ({times} time(s)")
+mode, times = find_mode(numbers)   # ← capture returned values here
 
+print(f"The number that appears the most is: {mode} ({times} time(s))")
